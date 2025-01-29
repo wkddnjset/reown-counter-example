@@ -51,7 +51,7 @@ This project is a Counter dApp example implemented using Reown AppKit on the Sol
 ## 💻 Installation
 
 ```bash
-git clone https://github.com/your-username/reown-counter-example
+git clone https://github.com/wkddnjset/reown-counter-example
 cd reown-counter-example
 pnpm install
 ```
