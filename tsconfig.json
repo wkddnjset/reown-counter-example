@@ -1,0 +1,24 @@
+{
+  "extends": [
+    /** @see file://./node_modules/@toktokhan-dev/ts-config/nextjs.json */
+    "@toktokhan-dev/ts-config/nextjs.json"
+  ],
+  "compilerOptions": {
+    "baseUrl": "src",
+    "paths": {
+      "@/*": ["./*"],
+      "@/theme/*": ["./configs/theme/*"],
+      "@/swagger/*": ["./generated/swagger/*"],
+      "@/images": ["./generated/path/images.ts"],
+      "@/icons": ["./generated/icons/MyIcons.tsx"],
+      "@/packageJSON": ["../package.json"],
+      "@/anchor": ["../anchor/src"]
+    },
+    "incremental": true,
+    "declaration": false,
+    "moduleResolution": "Node"
+  },
+
+  "include": ["next-env.d.ts", "app.d.ts", "**/*.ts", "**/*.tsx", "**/*.d.ts"],
+  "exclude": ["node_modules", "./public/mockServiceWorker.js"]
+}
