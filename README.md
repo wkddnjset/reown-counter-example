@@ -12,7 +12,9 @@ A Counter dApp example using Reown AppKit on Solana blockchain.
 
 ## 📚 Overview
 
-This project is a Counter dApp example implemented using Reown AppKit on the Solana blockchain. It is based on the Anchor framework, and the frontend is implemented using React along with react-query and the GSAP animation library.
+- DEMO: https://reown-counter.vercel.app
+
+This project is a Counter dApp example implemented using Reown AppKit on the Solana blockchain. It is built with the Anchor framework, and the frontend is developed using Next.js and React, enhanced with react-query for state management and GSAP for smooth animations.
 
 ## 🚀 Key Features
 
@@ -20,6 +22,24 @@ This project is a Counter dApp example implemented using Reown AppKit on the Sol
 - Real-time transaction status monitoring
 - Smooth animation effects
 - Easy state management using Reown AppKit
+
+## 🔍 Detailed Features
+
+- Auth Guard HOC (`/src/hocs/withAuthGuard.tsx`)
+  - Page navigation based on authentication status
+  - Protects routes from unauthorized access
+- Custom Anchor Program Hook (`/src/hooks/useAnchorProvider.ts`)
+  - Sets up Anchor Provider for Solana program interactions
+  - Manages program connection and context
+- AppKit Provider (`/src/configs/appkit.ts`)
+  - AppKit configuration
+  - Project metadata setup
+  - Network configuration
+  - Feature settings
+- Counter Custom Hook (`/src/containers/Count/hooks/useCounter.ts`)
+  - Handles counter initialization
+  - Manages increment function calls
+  - Maintains counter state
 
 ## 🛠 Technologies Used
 
